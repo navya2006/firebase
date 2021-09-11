@@ -8,9 +8,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css" type="text/css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Open+Sans:wght@300&family=Poiret+One&family=Poppins:wght@100&family=Raleway:wght@100&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -18,10 +15,10 @@
     <div class="row">
         <div class="col-md-2"></div>
         <div class="col-md-8 content">
-            <h1>DISCUSSION FORUM</h1>
+            <h1>Leave Us A Review?</h1>
             <!-- Comment form -->
-            <div class="comment_input top black">
-                <div class="row top">
+            <div class="comment_input">
+                <div class="row">
                     <div class="col-md-6">
                         <input type="text" name="Name" id="name" placeholder="Name..." required>
                     </div>
@@ -30,12 +27,10 @@
                     </div>
                 </div>
                 <br>
-                <div class="top">
-                <textarea class="top" type="text" name="comment" id="comment" placeholder="Comment..." rows="1" class="auto_height"
+                <textarea type="text" name="comment" id="comment" placeholder="Comment..." rows="1" class="auto_height"
                     oninput="auto_height(this)" required></textarea>
-                </div>
                 <br>
-                <input class="top" type="hidden" name="comment_post_ID" value="" id="comment_post_ID" />
+                <input type="hidden" name="comment_post_ID" value="" id="comment_post_ID" />
                 <br>
                 <div class="alert text-danger">please input a valid value</div>
                 <button class="btn" name="submit" type="submit" id="compost" value="">Submit comment</button>
